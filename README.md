@@ -32,6 +32,7 @@ Extra: Make sure you have a camera accessible for CV2, either internal or extern
 pip install pygame mediapipe opencv-python-headless
 
 python game.py
+```
 
 #### Files
 
