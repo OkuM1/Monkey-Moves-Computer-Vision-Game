@@ -51,3 +51,9 @@ Pygame was chosen as the game development framework due to its simplicity and ea
 mediapipe and OpenCV were chosen for hand gesture recognition and camera input processing, respectively. These libraries provide robust and efficient solutions for computer vision tasks, making it possible to implement hand gesture controls and camera-based gameplay mechanics.
 
 Monkey Moves is a fun and engaging game that combines hand gesture controls with dynamic gameplay mechanics. By leveraging the power of Python and popular libraries like Pygame, mediapipe, and OpenCV, it provides a unique gaming experience that is both challenging and enjoyable.
+
+Sources: 
+pygame docs https://www.pygame.org/docs/
+mediapipe docs https://developers.google.com/mediapipe
+ChatGPT (used for troubleshooting)
+Developed locally in VScode
