@@ -1,5 +1,5 @@
 # Monkey Moves
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <https://www.youtube.com/watch?v=0VEA0qOUKeI>
 #### Description:
 
 Monkey Moves is a Pygame-based game where the player controls a character using hand gestures detected by a camera. The goal is to avoid obstacles and collect items while progressing through obstacles that are progressively increasing in speed. 
