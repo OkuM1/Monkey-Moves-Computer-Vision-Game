@@ -26,8 +26,8 @@ Extra: Make sure you have a camera accessible for CV2, either internal or extern
 
 ### Installation
 
-   ```sh
-   git clone https://github.com/your_username/Murats-Game.git
+```sh
+git clone https://github.com/OkuM1/Monkey-Moves-Computer-Vision-Game.git
 
 pip install pygame mediapipe opencv-python-headless
 
