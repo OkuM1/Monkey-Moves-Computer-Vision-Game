@@ -41,17 +41,17 @@
 
  Credits
 
-    💻 Developed locally in VS Code
+   Developed locally in VS Code
 
-    🧠 Assisted by ChatGPT for logic validation & troubleshooting
+   Assisted by ChatGPT for logic validation & troubleshooting
 
-    📚 Resources:
+   Resources:
 
-        Pygame Documentation
+   Pygame Documentation
 
-        MediaPipe Hands
+   MediaPipe Hands
 
-        OpenCV Docs
+   OpenCV Docs
 ---
 
 ## ⚡ Quick Start
