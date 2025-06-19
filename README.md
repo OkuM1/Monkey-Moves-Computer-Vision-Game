@@ -1,59 +1,83 @@
-# Monkey Moves
-#### Video Demo:  <https://www.youtube.com/watch?v=0VEA0qOUKeI>
-#### Description:
+# 🐵 Monkey Moves  
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg) ![Pygame](https://img.shields.io/badge/pygame-2.x-orange) ![Open Source Love](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
-Monkey Moves is a Pygame-based game where the player controls a character using hand gestures detected by a camera. The goal is to avoid obstacles and collect items while progressing through obstacles that are progressively increasing in speed. 
+> **Hand-gesture-controlled endless-runner built with Pygame, MediaPipe & OpenCV.**  
+> Dodge obstacles, collect bananas, and let your webcam be the gamepad!
 
-## Features
+[🎞 Video Demo](https://www.youtube.com/watch?v=0VEA0qOUKeI)
 
-- **Hand Gesture Controls**: Use one hand and the gestures detected by the camera to control the player character.
-- **Dynamic Gameplay**: Obstacles and collectible items spawn dynamically, providing a unique gameplay experience each time.
-- **Scoring System**: Keep track of your score as you progress through the game.
-- **Start and End Screens**: Clearly defined start and end screens provide a smooth user experience.
+---
 
-## Getting Started
+## 📑 Table of Contents
+1. [Features](#-features)  
+2. [Gameplay & Controls](#-gameplay--controls)  
+3. [Quick Start](#-quick-start)  
+4. [Project Layout](#-project-layout)  
+5. [Design Highlights](#-design-highlights)  
+6. [Contributing](#-contributing)  
+7. [Roadmap](#-roadmap)  
+8. [License & Credits](#-license--credits)
 
-### Prerequisites
+---
 
-Make sure you have the following installed:
+## 🚀 Features
+- **Natural hand-gesture input** via **MediaPipe Hands** (one-hand control).
+- **Procedural obstacle & item spawner** — every run is unique.
+- **Smooth difficulty scaling:** game speed and spawn rate increase over time.
+- **Score & high-score tracking** with on-screen HUD.
+- **Polished UX:** animated start, pause, and game-over screens with sound FX.
+- **Cross-platform:** tested on Windows, macOS, Linux with Python 3.9+.
 
-- Python 2.9
-- Pygame
-- mediapipe
-- OpenCV
+---
 
-Extra: Make sure you have a camera accessible for CV2, either internal or external. Using WSL2 with an integrated laptop camera will not work.
+## 🎮 Gameplay & Controls
+| Gesture | Action                |
+|---------|-----------------------|
+| ✊ Fist  | **Jump** (avoid ground obstacles) |
+| 🖐️ Palm | **Glide / Slow fall** (longer airtime) |
+| 🤚 Swipe Left / Right* | **Lane change** (sidestep obstacles) |
 
-### Installation
+\* Swipe detection is derived from horizontal palm-center velocity.
 
-```sh
-git clone https://github.com/OkuM1/Monkey-Moves-Computer-Vision-Game.git
+ Credits
 
-pip install pygame mediapipe opencv-python-headless
+    💻 Developed locally in VS Code
 
-python game.py
-```
+    🧠 Assisted by ChatGPT for logic validation & troubleshooting
 
-#### Files
+    📚 Resources:
 
-game.py: This is the main Python script that contains the game logic, including the player controls, obstacle spawning, scoring system, and game state management.
+        Pygame Documentation
 
-images/: This directory contains the images used in the game, such as the player character, obstacles, background, and start/end screens.
+        MediaPipe Hands
 
-README.md: This file contains the project documentation, including a description of the game, installation instructions, and file descriptions.
+        OpenCV Docs
+---
 
-#### Design 
+## ⚡ Quick Start
 
-Python 2.9 was chosen as the language for this project due to compatibility reasons with existing libraries and dependencies. While Python 3.x is the recommended version, some libraries may not yet fully support it, and compatibility issues could arise.
+### 1. Prerequisites
+| Package | Tested Version |
+|---------|---------------|
+| Python  | **3.9 – 3.12** |
+| Pygame  | 2.5 |
+| MediaPipe | 0.10 |
+| OpenCV-Python-Headless | 4.10 |
 
-Pygame was chosen as the game development framework due to its simplicity and ease of use. It provides a high-level interface for handling graphics, sound, and user input, allowing for rapid game development without the need for low-level programming.
+A USB or integrated camera must be accessible to OpenCV.  
+*(WSL2 cannot access host webcams — run natively on Windows/Linux/macOS).*
 
-mediapipe and OpenCV were chosen for hand gesture recognition and camera input processing, respectively. These libraries provide robust and efficient solutions for computer vision tasks, making it possible to implement hand gesture controls and camera-based gameplay mechanics.
+### 2. Installation
+```bash
+  git clone https://github.com/OkuM1/Monkey-Moves-Computer-Vision-Game.git
+  cd Monkey-Moves-Computer-Vision-Game
+  
+  # Create a virtual env (recommended)
+  python -m venv .venv
+  source .venv/bin/activate      # Windows: .venv\Scripts\activate
+  
+  # Install runtime dependencies
+  pip install -r requirements.txt
+  
+  python game.py           # Starts the game with default settings
 
-Monkey Moves is a fun and engaging game that combines hand gesture controls with dynamic gameplay mechanics. By leveraging the power of Python and popular libraries like Pygame, mediapipe, and OpenCV, it provides a unique gaming experience that is both challenging and enjoyable.
-
-Sources: 
-pygame docs https://www.pygame.org/docs/
-mediapipe docs https://developers.google.com/mediapipe
-ChatGPT (used for troubleshooting)
-Developed locally in VScode
